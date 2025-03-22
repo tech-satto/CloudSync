@@ -1,0 +1,97 @@
+/* Resetting and setting global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Roboto', sans-serif; /* Changed to a more modern font for elegance */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px; /* Slightly increased max-width for better use of space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7); /* Slight dark overlay for better contrast */
+  border-radius: 12px; /* Rounded corners for a softer, royal feel */
+}
+
+.cloudsync-logo {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #f1c40f; /* Golden color for royal touch */
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #bdc3c7; /* Light gray for a subdued subtitle */
+}
+
+.btn {
+  width: 100%;
+  max-width: 250px;
+  padding: 14px 28px;
+  border-radius: 10px;
+  color: white;
+  background: #3498db; /* A sharp blue for buttons */
+  border: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #3498db; /* Subtle blue glow effect on hover */
+}
+
+.input-field {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  background-color: #2c3e50; /* Slightly darker background for inputs */
+  color: white;
+  border: 2px solid #34495e;
+  outline: none;
+  font-size: 1.1rem;
+}
+
+.input-field:focus {
+  border: 2px solid #3498db; /* Focus border effect */
+  box-shadow: 0 0 8px #3498db;
+}
+
+.error-message {
+  color: #e74c3c; /* Red color for error messages */
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+    padding: 15px;
+  }
+}
